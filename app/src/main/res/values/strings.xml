@@ -7,5 +7,6 @@
     <string name="calculate">CALCULATE</string>
     <string name="pre_o_do_servi_o">Preço do Serviço</string>
     <string name="gostaria_de_arredondar">Gostaria de arredondar?</string>
+    <string name="valor">Valor: %s</string>
 
 </resources>

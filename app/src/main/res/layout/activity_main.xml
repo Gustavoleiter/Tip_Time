@@ -7,19 +7,19 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/preco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/pre_o_do_servi_o"
+        android:hint="@string/pre_o_do_servi_o"
+        android:inputType="numberDecimal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/grupo"
         android:layout_width="197dp"
         android:layout_height="139dp"
         android:layout_marginStart="16dp"
@@ -27,19 +27,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/percentual20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/amazing_20" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/percentual18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/good_18" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/percentual15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/okay_15" />
@@ -53,7 +53,8 @@
         android:layout_marginStart="16dp"
         android:text="@string/como_foi_o_atendimento"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/preco"
+        />
 
     <TextView
         android:id="@+id/textView5"
@@ -63,10 +64,10 @@
         android:layout_marginTop="16dp"
         android:text="@string/gostaria_de_arredondar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/grupo" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/calculate_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -82,10 +83,19 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/calculate_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/grupo" />
 
+    <TextView
+        android:id="@+id/tip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculate_button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

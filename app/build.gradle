@@ -6,7 +6,9 @@ plugins {
 android {
     namespace 'com.example.tiptime'
     compileSdk 33
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
         applicationId "com.example.tiptime"
         minSdk 28
